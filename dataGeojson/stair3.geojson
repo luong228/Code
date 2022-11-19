@@ -1,0 +1,30 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "stair 3",
+          "height": 0.11,
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+                [106.70291868448884, 10.776465706007768,10.62],
+                [106.702884,10.776427 ,10.62],
+                [106.703032,10.776296 ,10.62],
+                [106.70306717700323, 10.77633459089841,10.62],
+                [106.70291868448884, 10.776465706007768,10.62]
+
+            ]
+          ]
+        },
+        "id": "2"
+      }
+    ]
+  }

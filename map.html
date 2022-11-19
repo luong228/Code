@@ -84,7 +84,15 @@
         		graphicsLayer.add(createGraphic(data));
         	});
         	map.add(graphicsLayer);
+        });
 
+        esriRequest('./datajson/rimCover.json', json_options).then(function(response) {
+        	var graphicsLayer = new GraphicsLayer();
+        	console.log(response);
+        	response.data.forEach(function(data){
+        		graphicsLayer.add(createGraphic(data));
+        	});
+        	map.add(graphicsLayer);
         });
 
         // geojson layer
@@ -100,7 +108,7 @@
                 type: "extrude",
                 size: 1.95,
                 material: {
-                  color: "#7eadf7",
+                  color: "#a58e77",
                 },
               },
             ],
@@ -117,9 +125,70 @@
             symbolLayers: [
               {
                 type: "extrude",
-                size: 11.64,
+                //size: 11.64,
+                size: 1.95,
                 material: {
-                  color: "#990033",
+                  color: "#ded6cc",
+                },
+              },
+            ],
+          },
+        };
+        
+        const rimRightLayer = new GeoJSONLayer({
+          url: "./dataGeojson/rimRight.geojson",
+        });
+        rimRightLayer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                //size: 11.64,
+                size: 0.97,
+                material: {
+                  color: "#ded6cc",
+                },
+              },
+            ],
+          },
+        };
+
+        const rimLeftLayer = new GeoJSONLayer({
+          url: "./dataGeojson/rimLeft.geojson",
+        });
+        rimLeftLayer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                //size: 11.64,
+                size: 0.99,
+                material: {
+                  color: "#ded6cc",
+                },
+              },
+            ],
+          },
+        };
+
+        const bodyTopLayer = new GeoJSONLayer({
+          url: "./dataGeojson/bodyTop.geojson",
+        });
+        bodyTopLayer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                //size: 11.64,
+                size: 9.7,
+                material: {
+                  color: "#ded6cc",
                 },
               },
             ],
@@ -138,7 +207,121 @@
                 type: "extrude",
                 size: 0.11,
                 material: {
-                  color: "#FF9900",
+                  color: "#8c8c8c",
+                },
+              },
+            ],
+          },
+        };
+
+        const stair2Layer = new GeoJSONLayer({
+          url: "./dataGeojson/stair2.geojson",
+        });
+        stair2Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.11,
+                material: {
+                  color: "#8c8c8c",
+                },
+              },
+            ],
+          },
+        };
+
+        const stair3Layer = new GeoJSONLayer({
+          url: "./dataGeojson/stair3.geojson",
+        });
+        stair3Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.11,
+                material: {
+                  color: "#8c8c8c",
+                },
+              },
+            ],
+          },
+        };
+
+        const stair4Layer = new GeoJSONLayer({
+          url: "./dataGeojson/stair4.geojson",
+        });
+        stair4Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.11,
+                material: {
+                  color: "#8c8c8c",
+                },
+              },
+            ],
+          },
+        };
+
+        const stair5Layer = new GeoJSONLayer({
+          url: "./dataGeojson/stair5.geojson",
+        });
+        stair5Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.11,
+                material: {
+                  color: "#8c8c8c",
+                },
+              },
+            ],
+          },
+        };
+
+        const stair6Layer = new GeoJSONLayer({
+          url: "./dataGeojson/stair6.geojson",
+        });
+        stair6Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.11,
+                material: {
+                  color: "#8c8c8c",
+                },
+              },
+            ],
+          },
+        };
+
+        const stair7Layer = new GeoJSONLayer({
+          url: "./dataGeojson/stair7.geojson",
+        });
+        stair7Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.11,
+                material: {
+                  color: "#8c8c8c",
                 },
               },
             ],
@@ -157,7 +340,7 @@
                 type: "extrude",
                 size: 0.32,
                 material: {
-                  color: "#339999",
+                  color: "#cfcfcf",
                 },
               },
             ],
@@ -176,7 +359,7 @@
                 type: "extrude",
                 size: 0.72,
                 material: {
-                  color: "#6600FF",
+                  color: "#b4ae9c",
                 },
               },
             ],
@@ -264,7 +447,16 @@
           ground: "world-elevation",
           layers: [bottomLayer, 
           bodyLayer,
+          rimRightLayer,
+          rimLeftLayer,
+          bodyTopLayer,
           stairLayer,
+          stair2Layer,
+          stair3Layer,
+          stair4Layer,
+          stair5Layer,
+          stair6Layer,
+          stair7Layer,
 
           roofBorderLayer,
           roofBorderSecondLayer,
