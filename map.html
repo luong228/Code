@@ -134,7 +134,7 @@
             ],
           },
         };
-        
+
         const rimRightLayer = new GeoJSONLayer({
           url: "./dataGeojson/rimRight.geojson",
         });
@@ -328,6 +328,101 @@
           },
         };
 
+        const stair8Layer = new GeoJSONLayer({
+          url: "./dataGeojson/stair8.geojson",
+        });
+        stair8Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.11,
+                material: {
+                  color: "#8c8c8c",
+                },
+              },
+            ],
+          },
+        };
+
+        const stair9Layer = new GeoJSONLayer({
+          url: "./dataGeojson/stair9.geojson",
+        });
+        stair9Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.11,
+                material: {
+                  color: "#8c8c8c",
+                },
+              },
+            ],
+          },
+        };
+
+        const stair10Layer = new GeoJSONLayer({
+          url: "./dataGeojson/stair10.geojson",
+        });
+        stair10Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.11,
+                material: {
+                  color: "#8c8c8c",
+                },
+              },
+            ],
+          },
+        };
+
+        const stair11Layer = new GeoJSONLayer({
+          url: "./dataGeojson/stair11.geojson",
+        });
+        stair11Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.11,
+                material: {
+                  color: "#8c8c8c",
+                },
+              },
+            ],
+          },
+        };
+
+        const stair12Layer = new GeoJSONLayer({
+          url: "./dataGeojson/stair12.geojson",
+        });
+        stair12Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.11,
+                material: {
+                  color: "#8c8c8c",
+                },
+              },
+            ],
+          },
+        };
+
         const roofBorderLayer = new GeoJSONLayer({
           url: "./dataGeojson/roofBorder.geojson",
         });
@@ -457,6 +552,11 @@
           stair5Layer,
           stair6Layer,
           stair7Layer,
+          stair8Layer,
+          stair9Layer,
+          stair10Layer,
+          stair11Layer,
+          stair12Layer,
 
           roofBorderLayer,
           roofBorderSecondLayer,
