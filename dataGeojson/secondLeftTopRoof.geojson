@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "second left top roof",
+        "height": 0.78,
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.703441,
+              10.776787,
+              30.28
+            ],
+            [
+              106.703386,
+              10.776836,
+              33.42
+            ],
+            [
+              106.703461,
+              10.776919,
+              33.42
+            ],
+            [
+              106.703516,
+              10.77687,
+              30.28
+            ],
+            [
+              106.703441,
+              10.776787,
+              30.28
+            ]
+          ]
+        ]
+      },
+      "id": "2"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 [
     {
+        "_comment": "đôí diện",
         "type": "polygon",
         "rings": [
             [
@@ -31,10 +32,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -47,6 +48,7 @@
         }
     },
     {
+        "_comment": "tam giác chính diện",
         "type": "polygon",
         "rings": [
             [
@@ -73,10 +75,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
-                79,
-                0.9
+                115,
+                113,
+                108,
+                1
             ],
             "outline": {
                 "color": [
@@ -121,10 +123,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -169,10 +171,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -217,10 +219,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -265,10 +267,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -313,10 +315,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -361,10 +363,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -409,10 +411,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -457,10 +459,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -515,10 +517,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
-                79,
-                0.9
+                115,
+                113,
+                108,
+                1
             ],
             "outline": {
                 "color": [
@@ -563,10 +565,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -611,10 +613,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -659,10 +661,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -707,10 +709,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -755,10 +757,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -803,10 +805,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -851,10 +853,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -909,10 +911,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
-                79,
-                0.9
+                115,
+                113,
+                108,
+                1
             ],
             "outline": {
                 "color": [
@@ -957,10 +959,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -1005,10 +1007,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
-                79,
-                0.9
+                115,
+                113,
+                108,
+                1
             ],
             "outline": {
                 "color": [
@@ -1053,10 +1055,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
-                79,
-                0.9
+                115,
+                113,
+                108,
+                1
             ],
             "outline": {
                 "color": [
@@ -1096,10 +1098,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
-                79,
-                0.9
+                115,
+                113,
+                108,
+                1
             ],
             "outline": {
                 "color": [
@@ -1139,10 +1141,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
-                79,
-                0.9
+                115,
+                113,
+                108,
+                1
             ],
             "outline": {
                 "color": [
@@ -1182,10 +1184,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
-                79,
-                0.9
+                115,
+                113,
+                108,
+                1
             ],
             "outline": {
                 "color": [
@@ -1230,10 +1232,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
-                79,
-                0.9
+                115,
+                113,
+                108,
+                1
             ],
             "outline": {
                 "color": [
@@ -1278,10 +1280,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
-                79,
-                0.9
+                115,
+                113,
+                108,
+                1
             ],
             "outline": {
                 "color": [
@@ -1326,10 +1328,10 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [
@@ -1360,7 +1362,11 @@
                 "10.776610 ",
                 "29.95"
             ],
-            ["106.70299973749252", "10.776551669801703","24.31"],
+            [
+                "106.70299973749252",
+                "10.776551669801703",
+                "24.31"
+            ],
             [
                 "106.70292539001134",
                 "10.776469081980984",
@@ -1370,10 +1376,58 @@
         "symbol": {
             "type": "simple-fill",
             "color": [
-                227,
-                139,
                 79,
-                0.9
+                95,
+                104,
+                1
+            ],
+            "outline": {
+                "color": [
+                    255,
+                    255,
+                    255
+                ],
+                "width": 1
+            }
+        }
+    },
+    {
+        "_comment": "mái sau 3",
+        "type": "polygon",
+        "rings": [
+            [
+                "106.703458",
+                "10.777026",
+                "24.31"
+            ],
+            [
+                "106.703444",
+                "10.777038 ",
+                "28.7"
+            ],
+            [
+                "106.703465",
+                "10.777060",
+                "28.7"
+            ],
+            [
+                "106.70349343158911",
+                "10.777060947138734",
+                "24.31"
+            ],
+            [
+                "106.703458",
+                "10.777026",
+                "24.31"
+            ]
+        ],
+        "symbol": {
+            "type": "simple-fill",
+            "color": [
+                79,
+                95,
+                104,
+                1
             ],
             "outline": {
                 "color": [

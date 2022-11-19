@@ -1,0 +1,50 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "First left top roof",
+          "height": 0.78,
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+                [
+                    106.703203,
+                    10.776523,
+                    30.28
+                ],
+                [
+                    106.703148,
+                    10.776572,
+                    33.42
+                ],
+                [
+                    106.703223,
+                    10.776655,
+                    33.42
+                ],
+                [
+                    106.703278,
+                    10.776606,
+                    30.28
+                ],
+                [
+                    106.703203,
+                    10.776523,
+                    30.28
+                ]
+            ]
+          ]
+        },
+        "id": "2"
+      }
+    ]
+  }
+  
