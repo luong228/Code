@@ -1,0 +1,32 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "Wall prism",
+          "height": 0.73,
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+              [
+                [106.70288884491356, 10.776531578649001,14.29], 
+                [106.702895298979, 10.776538742297856,14.29],
+        [106.702902, 10.776533 ,14.29],
+        [106.70289521515994, 10.776525897134267,14.29],
+        [106.70288884491356, 10.776531578649001,14.29]
+
+              ]
+            ]
+          ]
+        },
+        "id": "2"
+      }
+    ]
+  }

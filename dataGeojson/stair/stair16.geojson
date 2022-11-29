@@ -1,0 +1,30 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "stair 16",
+                "height": 0.11,
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [106.70294274055085, 10.776444544418702,11.91],
+                        [106.70293 , 10.776429 ,11.91],
+                        [106.703029 , 10.776341 ,11.91],
+                        [106.70304256901768, 10.776356522073176,11.91],
+                        [106.70294274055085, 10.776444544418702,11.91]
+
+                    ]
+                ]
+            },
+            "id": "2"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "stair 17",
+                "height": 0.11,
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [106.70294424929342, 10.776443309306446, 12.02],
+                        [106.702933 , 10.77643 , 12.02],
+                        [106.703029 , 10.776345 , 12.02],
+                        [106.70303997062783, 10.776358333571656, 12.02],
+                        [106.70294424929342, 10.776443309306446, 12.02]
+                    ]
+                ]
+            },
+            "id": "2"
+        }
+    ]
+}

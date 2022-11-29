@@ -1,0 +1,29 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "Building name": "stair 18",
+                "height": 0.11,
+                "idb": "1"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [106.70294791588348, 10.776439695698102, 12.13],
+                        [106.70294 , 10.77643 , 12.13],
+                        [106.703029 , 10.776352 , 12.13],
+                        [106.70303676131245, 10.776361220037444, 12.13],
+                        [106.70294791588348, 10.776439695698102, 12.13]
+                    ]
+                ]
+            },
+            "id": "2"
+        }
+    ]
+}
