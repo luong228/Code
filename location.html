@@ -1,0 +1,115 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>ArcGIS JavaScript Tutorials: Create a Starter App</title>
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/themes/light/main.css">
+  <script src="https://js.arcgis.com/4.15/"></script>
+  <script src="function.js"></script>
+
+  <script>
+    let map;
+    var list_points = [];
+    var string_points = "";
+
+    function copyTextToClipboard(text) {
+      if (!navigator.clipboard) {
+        fallbackCopyTextToClipboard(text);
+        return;
+      }
+      navigator.clipboard.writeText(text).then(function () {
+        console.log('Async: Copying to clipboard was successful!');
+      }, function (err) {
+        console.error('Async: Could not copy text: ', err);
+      });
+    }
+    require([
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/Graphic",
+      "esri/layers/GraphicsLayer"
+    ], function (Map, MapView, GraphicsLayer, Graphic) {
+      map = new Map({
+        basemap: "topo-vector"
+      });
+      var view = new MapView({
+        container: "viewDiv",
+        map: map,
+        center: [106.70259564594245, 10.777053948183786],
+        zoom: 19
+      });
+
+      view.popup.autoOpenEnabled = false; // Disable the default popup behavior
+      view.on("click", function (event) { // Listen for the click event
+        view.hitTest(event).then(function (hitTestResults) { // Search for features where the user clicked
+          if (hitTestResults.results) {
+            list_points.push([event.mapPoint.longitude, event.mapPoint.latitude]);
+            string_points += "[" + event.mapPoint.longitude + ", " + event.mapPoint.latitude + ", 0],"
+            copyTextToClipboard(string_points);
+            // console.log(list_points);
+          }
+        })
+      });
+      const graphicsLayer = new GraphicsLayer();
+      map.add(graphicsLayer);
+      const polyline = {
+        type: "polyline",
+        paths: [
+          [106.70325833333334, 10.776950000000001],
+          [106.70328333333333, 10.776927777777779],
+          [106.70339166666668, 10.777047222222222],
+          // [106.70288333333333, 10.776533333333335],
+          // [106.7033888888889, 10.77705277777778],
+          // [106.70344166666666, 10.77711388888889],
+          // [106.70350277777779, 10.777061111111111],
+          // [106.70347777777778, 10.777036111111112],
+          // [106.703575, 10.776947222222223],
+          // [106.70360000000001, 10.776975],
+          // [106.70365833333334, 10.776922222222224],
+          // [106.70360277777777, 10.77686388888889],
+          // [106.70359722222223, 10.776866666666667],
+          // [106.7034888888889, 10.776747222222223],
+          // [106.70351388888889, 10.776725],
+          // [106.70313888888889, 10.776308333333334],
+        ]
+      };
+      const simpleLineSymbol = {
+        type: "simple-line",
+        color: [226, 119, 40], // Orange
+        width: 2
+      };
+
+      const polylineGraphic = new Graphic({
+        geometry: polyline,
+        symbol: simpleLineSymbol
+      });
+      graphicsLayer.add(polylineGraphic);
+
+    });
+
+
+    // let c= dodai(106.70296058411573, 10.776620521574198,106.70314700737691, 10.776463556212846)
+    // dodai(106.70296058411573, 10.776620521574198,106.70333944613724, 10.777000606320104)
+    // console.log(MapToReal(c))
+
+
+  </script>
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+</body>
+
+</html>
