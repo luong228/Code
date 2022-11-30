@@ -887,9 +887,28 @@
             symbolLayers: [
               {
                 type: "extrude",
-                size: 0.73,
+                size: 0.37,
                 material: {
                   color: "#dbdbdb",
+                },
+              },
+            ],
+          },
+        };
+
+        const wallPrismBottom2 = new GeoJSONLayer({
+          url: "./dataGeojson/wallPrism/wallPrismBottom2.geojson",
+        });
+        wallPrismBottom2.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.36,
+                material: {
+                  color: "#E8E8E8",
                 },
               },
             ],
@@ -947,6 +966,7 @@
 
           wallPrism,
           wallPrismBottom,
+          wallPrismBottom2,
           //dome,
         ], //end layers
         });
