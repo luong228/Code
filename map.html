@@ -77,42 +77,60 @@
           responseType: "json",
         };
         //request json
-        esriRequest('./datajson/roof.json', json_options).then(function(response) {
-        	var graphicsLayer = new GraphicsLayer();
-        	console.log(response);
-        	response.data.forEach(function(data){
-        		graphicsLayer.add(createGraphic(data));
-        	});
-        	map.add(graphicsLayer);
+        esriRequest("./datajson/roof.json", json_options).then(function (
+          response
+        ) {
+          var graphicsLayer = new GraphicsLayer();
+          console.log(response);
+          response.data.forEach(function (data) {
+            graphicsLayer.add(createGraphic(data));
+          });
+          map.add(graphicsLayer);
         });
 
-        esriRequest('./datajson/rimCover.json', json_options).then(function(response) {
-        	var graphicsLayer = new GraphicsLayer();
-        	console.log(response);
-        	response.data.forEach(function(data){
-        		graphicsLayer.add(createGraphic(data));
-        	});
-        	map.add(graphicsLayer);
+        esriRequest("./datajson/rimCover.json", json_options).then(function (
+          response
+        ) {
+          var graphicsLayer = new GraphicsLayer();
+          console.log(response);
+          response.data.forEach(function (data) {
+            graphicsLayer.add(createGraphic(data));
+          });
+          map.add(graphicsLayer);
         });
 
+        // esriRequest("./datajson/dome.json", json_options).then(function (
+        //   response
+        // ) {
+        //   var graphicsLayer = new GraphicsLayer();
+        //   console.log(response);
+        //   response.data.forEach(function (data) {
+        //     graphicsLayer.add(createGraphic(data));
+        //   });
+        //   map.add(graphicsLayer);
+        // });
 
-         esriRequest('./datajson/dome.json', json_options).then(function(response) {
-        	var graphicsLayer = new GraphicsLayer();
-        	console.log(response);
-        	response.data.forEach(function(data){
-        		graphicsLayer.add(createGraphic(data));
-        	});
-        	map.add(graphicsLayer);
+        esriRequest("./datajson/domelv1.json", json_options).then(function (
+          response
+        ) {
+          var graphicsLayer = new GraphicsLayer();
+          console.log(response);
+          response.data.forEach(function (data) {
+            graphicsLayer.add(createGraphic(data));
+          });
+          map.add(graphicsLayer);
         });
 
-        esriRequest('./datajson/domelv1.json', json_options).then(function(response) {
-        	var graphicsLayer = new GraphicsLayer();
-        	console.log(response);
-        	response.data.forEach(function(data){
-        		graphicsLayer.add(createGraphic(data));
-        	});
-        	map.add(graphicsLayer);
-        });
+        // esriRequest("./datajson/domeCover.json", json_options).then(function (
+        //   response
+        // ) {
+        //   var graphicsLayer = new GraphicsLayer();
+        //   console.log(response);
+        //   response.data.forEach(function (data) {
+        //     graphicsLayer.add(createGraphic(data));
+        //   });
+        //   map.add(graphicsLayer);
+        // });
         // geojson layer
         const bottomLayer = new GeoJSONLayer({
           url: "./dataGeojson/bottom.geojson",
@@ -546,7 +564,7 @@
             symbolLayers: [
               {
                 type: "extrude",
-                size: 0.11,
+                size: 0.12,
                 material: {
                   color: "#8c8c8c",
                 },
@@ -566,6 +584,25 @@
               {
                 type: "extrude",
                 size: 0.32,
+                material: {
+                  color: "#cfcfcf",
+                },
+              },
+            ],
+          },
+        };
+
+        const roofBorderLower = new GeoJSONLayer({
+          url: "./dataGeojson/roofBorderLower.geojson",
+        });
+        roofBorderLower.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.33,
                 material: {
                   color: "#cfcfcf",
                 },
@@ -840,7 +877,7 @@
         };
 
         const dome = new GeoJSONLayer({
-          url: "./dataGeojson/dome/dome2.geojson",
+          url: "./dataGeojson/dome/dome.geojson",
         });
         dome.renderer = {
           type: "simple",
@@ -851,7 +888,26 @@
                 type: "extrude",
                 size: 0.6,
                 material: {
-                  color: "#694d36",
+                  color: "#cfcfcf",
+                },
+              },
+            ],
+          },
+        };
+
+        const dome2 = new GeoJSONLayer({
+          url: "./dataGeojson/dome/dome2.geojson",
+        });
+        dome2.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 1.45,
+                material: {
+                  color: "#cfcfcf",
                 },
               },
             ],
@@ -915,60 +971,59 @@
           },
         };
 
-
-
-
         const map = new Map({
           basemap: "topo-vector",
           ground: "world-elevation",
           layers: [
-            bottomLayer, 
-          bodyLayer,
-          rimRightLayer,
-          rimLeftLayer,
-          bodyTopLayer,
-          stairLayer,
-          stair2Layer,
-          stair3Layer,
-          stair4Layer,
-          stair5Layer,
-          stair6Layer,
-          stair7Layer,
-          stair8Layer,
-          stair9Layer,
-          stair10Layer,
-          stair11Layer,
-          stair12Layer,
-          stair13Layer,
-          stair14Layer,
-          stair15Layer,
-          stair16Layer,
-          stair17Layer,
-          stair18Layer,
+            bottomLayer,
+            bodyLayer,
+            rimRightLayer,
+            rimLeftLayer,
+            bodyTopLayer,
+            stairLayer,
+            stair2Layer,
+            stair3Layer,
+            stair4Layer,
+            stair5Layer,
+            stair6Layer,
+            stair7Layer,
+            stair8Layer,
+            stair9Layer,
+            stair10Layer,
+            stair11Layer,
+            stair12Layer,
+            stair13Layer,
+            stair14Layer,
+            stair15Layer,
+            stair16Layer,
+            stair17Layer,
+            stair18Layer,
 
-           roofBorderLayer,
-          roofBorderSecondLayer,
-          firstLeftTopRoof,
-          firstRightTopRoof,
-          secondLeftTopRoof,
-          secondRightTopRoof,
+            roofBorderLayer,
+            roofBorderLower,
+            roofBorderSecondLayer,
+            firstLeftTopRoof,
+            firstRightTopRoof,
+            secondLeftTopRoof,
+            secondRightTopRoof,
 
-          bottomPrism,
-          circle1,
-          bottomPrismRight,
-          prism,
-          prism2,
-          pedestal,
-          pedestalHigher,
+            bottomPrism,
+            circle1,
+            bottomPrismRight,
+            prism,
+            prism2,
+            pedestal,
+            pedestalHigher,
 
-          bacolony,
-          bacolony2,
+            bacolony,
+            bacolony2,
 
-          wallPrism,
-          wallPrismBottom,
-          wallPrismBottom2,
-          //dome,
-        ], //end layers
+            wallPrism,
+            wallPrismBottom,
+            wallPrismBottom2,
+            dome,
+            dome2,
+          ], //end layers
         });
 
         const view = new SceneView({
