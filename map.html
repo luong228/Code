@@ -222,7 +222,7 @@
               {
                 type: "extrude",
                 //size: 11.64,
-                size: 9.7,
+                size: 10.02,
                 material: {
                   color: "#ded6cc",
                 },
@@ -754,7 +754,8 @@
             symbolLayers: [
               {
                 type: "extrude",
-                size: 7.15,
+                // size: 7.15,
+                size: 7.52,
                 material: {
                   color: "#9e998a",
                 },
@@ -895,6 +896,25 @@
           },
         };
 
+        const domelower = new GeoJSONLayer({
+          url: "./dataGeojson/dome/domelower.geojson",
+        });
+        domelower.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.6,
+                material: {
+                  color: "#cfcfcf",
+                },
+              },
+            ],
+          },
+        };
+
         const dome2 = new GeoJSONLayer({
           url: "./dataGeojson/dome/dome2.geojson",
         });
@@ -906,6 +926,25 @@
               {
                 type: "extrude",
                 size: 1.45,
+                material: {
+                  color: "#cfcfcf",
+                },
+              },
+            ],
+          },
+        };
+
+        const dome2lower = new GeoJSONLayer({
+          url: "./dataGeojson/dome/dome2lower.geojson",
+        });
+        dome2lower.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 1.51,
                 material: {
                   color: "#cfcfcf",
                 },
@@ -1022,7 +1061,9 @@
             wallPrismBottom,
             wallPrismBottom2,
             dome,
+            domelower,
             dome2,
+            dome2lower,
           ], //end layers
         });
 
