@@ -222,9 +222,69 @@
               {
                 type: "extrude",
                 //size: 11.64,
-                size: 10.02,
+                size: 1.75,
                 material: {
                   color: "#ded6cc",
+                },
+              },
+            ],
+          },
+        };
+
+        const bodylv1Layer = new GeoJSONLayer({
+          url: "./dataGeojson/body/bodylv1.geojson",
+        });
+        bodylv1Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                //size: 11.64,
+                size: 7.51,
+                material: {
+                  color: "#ded6cc",
+                },
+              },
+            ],
+          },
+        };
+
+        const bodylv1_2Layer = new GeoJSONLayer({
+          url: "./dataGeojson/body/bodylv1_2.geojson",
+        });
+        bodylv1_2Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                //size: 11.64,
+                size: 2.5,
+                material: {
+                  color: "#ded6cc",
+                },
+              },
+            ],
+          },
+        };
+
+        const bodylvfinalLayer = new GeoJSONLayer({
+          url: "./dataGeojson/body/bodylvfinal.geojson",
+        });
+        bodylvfinalLayer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                //size: 11.64,
+                size: 10.66,
+                material: {
+                  color: "#4a4a4a",
                 },
               },
             ],
@@ -718,7 +778,7 @@
                 type: "extrude",
                 size: 1.94,
                 material: {
-                  color: "#73716C",
+                  color: "#ded6cc",
                 },
               },
             ],
@@ -737,7 +797,7 @@
                 type: "extrude",
                 size: 0.31,
                 material: {
-                  color: " #9e9e9e",
+                  color: "#dbdbdb",
                 },
               },
             ],
@@ -839,17 +899,55 @@
           },
         };
 
-        const bacolony = new GeoJSONLayer({
-          url: "./dataGeojson/frontBacolony/bacolony.geojson",
+        const bacolonylv1 = new GeoJSONLayer({
+          url: "./dataGeojson/frontBacolony/bacolonylv1.geojson",
         });
-        bacolony.renderer = {
+        bacolonylv1.renderer = {
           type: "simple",
           symbol: {
             type: "polygon-3d",
             symbolLayers: [
               {
                 type: "extrude",
-                size: 0.72,
+                size: 0.49,
+                material: {
+                  color: "#ded6cc",
+                },
+              },
+            ],
+          },
+        };
+
+        const bacolonylv2 = new GeoJSONLayer({
+          url: "./dataGeojson/frontBacolony/bacolonylv2.geojson",
+        });
+        bacolonylv2.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.07,
+                material: {
+                  color: "#cfcfcf",
+                },
+              },
+            ],
+          },
+        };
+
+        const bacolonylv3 = new GeoJSONLayer({
+          url: "./dataGeojson/frontBacolony/bacolonylv3.geojson",
+        });
+        bacolonylv3.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.16,
                 material: {
                   color: "#cfcfcf",
                 },
@@ -963,7 +1061,45 @@
             symbolLayers: [
               {
                 type: "extrude",
-                size: 8.97,
+                size: 7.71,
+                material: {
+                  color: "#b4ae9c",
+                },
+              },
+            ],
+          },
+        };
+
+        const wallPrism2 = new GeoJSONLayer({
+          url: "./dataGeojson/wallPrism/wallPrism2.geojson",
+        });
+        wallPrism2.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.61,
+                material: {
+                  color: "#cfcfcf",
+                },
+              },
+            ],
+          },
+        };
+
+        const wallPrism3 = new GeoJSONLayer({
+          url: "./dataGeojson/wallPrism/wallPrism3.geojson",
+        });
+        wallPrism3.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.75,
                 material: {
                   color: "#b4ae9c",
                 },
@@ -1019,6 +1155,10 @@
             rimRightLayer,
             rimLeftLayer,
             bodyTopLayer,
+            bodylv1Layer,
+            bodylv1_2Layer,
+            bodylvfinalLayer,
+
             stairLayer,
             stair2Layer,
             stair3Layer,
@@ -1046,7 +1186,7 @@
             secondLeftTopRoof,
             secondRightTopRoof,
 
-            bottomPrism,
+            //bottomPrism,
             circle1,
             bottomPrismRight,
             prism,
@@ -1054,10 +1194,14 @@
             pedestal,
             pedestalHigher,
 
-            bacolony,
+            bacolonylv1,
+            bacolonylv2,
+            bacolonylv3,
             bacolony2,
 
             wallPrism,
+            wallPrism2,
+            wallPrism3,
             wallPrismBottom,
             wallPrismBottom2,
             dome,
