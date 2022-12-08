@@ -1146,6 +1146,62 @@
           },
         };
 
+        const backBalcony1 = new GeoJSONLayer({
+          url: "./dataGeojson/backBalcony/backBalcony1.geojson",
+        });
+        backBalcony1.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#E8E8E8",
+                },
+              },
+            ],
+          },
+        };
+        const backBalcony2 = new GeoJSONLayer({
+          url: "./dataGeojson/backBalcony/backBalcony2.geojson",
+        });
+        backBalcony2.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#E8E8E8",
+                },
+              },
+            ],
+          },
+        };
+
+        const backBalcony3 = new GeoJSONLayer({
+          url: "./dataGeojson/backBalcony/backBalcony3.geojson",
+        });
+        backBalcony3.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#E8E8E8",
+                },
+              },
+            ],
+          },
+        };
+
         const map = new Map({
           basemap: "topo-vector",
           ground: "world-elevation",
@@ -1208,6 +1264,9 @@
             domelower,
             dome2,
             dome2lower,
+            backBalcony1,
+            backBalcony2,
+            backBalcony3,
           ], //end layers
         });
 

@@ -897,6 +897,27 @@
           ],
         };
 
+        const backBalconyGraphic = {
+          type: "polyline",
+          paths: [
+            //back balcony
+            [106.703618, 10.776971, 14.29],
+            [106.703652, 10.77694, 14.29],
+            [106.70364438966523, 10.77693249570087 ,14.29],
+            [106.70360977240513, 10.776962303026599 ,14.29],
+
+            [106.70358018428693, 10.776953821936985 ,14.29],
+            [106.70357238548172, 10.776944572921451 ,14.29],
+            [106.703474, 10.777032, 17.85],
+            [106.70348202449985, 10.777040610242407 ,14.29],
+
+              [106.703495, 10.777079, 17.85],
+              [106.703487, 10.777071, 17.85],
+              [106.70345236026358, 10.777101458734712 ,17.85],
+              [106.70346, 10.777109, 17.85],
+
+          ],
+        };
         const bacolony = {
           type: "polyline",
           paths: [
@@ -987,6 +1008,11 @@
           symbol: simpleLineSymbol,
         });
 
+        const backBalcony = new Graphic({
+          geometry: backBalconyGraphic,
+          symbol: simpleLineSymbol,
+        });
+
         const bacolonyG = new Graphic({
           geometry: bacolony,
           symbol: simpleLineSymbol,
@@ -1004,6 +1030,7 @@
         //graphicsLayer.add(miniStairGraphic);
         graphicsLayer.add(sanDuoiTruGraphic);
         //graphicsLayer.add(bacolonyG);
+        graphicsLayer.add(backBalcony);
       });
     </script>
   </head>

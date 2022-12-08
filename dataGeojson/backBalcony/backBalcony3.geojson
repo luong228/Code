@@ -1,0 +1,29 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "back bacolony 3",
+          "height": 0.05,
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [106.703495, 10.777079, 17.85],
+              [106.703487, 10.777071, 17.85],
+              [106.70345236026358, 10.777101458734712 ,17.85],
+              [106.70346, 10.777109, 17.85]
+
+            ]
+          ]
+        },
+        "id": "2"
+      }
+    ]
+  }

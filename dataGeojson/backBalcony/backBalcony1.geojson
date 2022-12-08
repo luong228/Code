@@ -1,0 +1,28 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "back bacolony 1",
+          "height": 0.05,
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [106.703618, 10.776971, 17.85],
+              [106.703652, 10.77694, 17.85],
+              [106.70364438966523, 10.77693249570087 ,17.85],
+              [106.70360977240513, 10.776962303026599 ,17.85]
+            ]
+          ]
+        },
+        "id": "2"
+      }
+    ]
+  }
