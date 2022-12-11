@@ -144,7 +144,26 @@
                 type: "extrude",
                 size: 1.95,
                 material: {
-                  color: "#a58e77",
+                  color: "#ded6cc",
+                },
+              },
+            ],
+          },
+        };
+
+        const bottomInsideLayer = new GeoJSONLayer({
+          url: "./dataGeojson/bottomInside.geojson",
+        });
+        bottomInsideLayer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 1.95,
+                material: {
+                  color: "#4a4a4a",
                 },
               },
             ],
@@ -1202,6 +1221,64 @@
           },
         };
 
+        // Upper Stair
+        const upperStairLayer = new GeoJSONLayer({
+          url: "./dataGeojson/upperStair/upperStair.geojson",
+        });
+        upperStairLayer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.11,
+                material: {
+                  color: "#8c8c8c",
+                },
+              },
+            ],
+          },
+        };
+
+        const upperStairLayer2 = new GeoJSONLayer({
+          url: "./dataGeojson/upperStair/upperStair2.geojson",
+        });
+        upperStairLayer2.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.11,
+                material: {
+                  color: "#8c8c8c",
+                },
+              },
+            ],
+          },
+        };
+
+        const upperStairLayer3 = new GeoJSONLayer({
+          url: "./dataGeojson/upperStair/upperStair3.geojson",
+        });
+        upperStairLayer3.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.11,
+                material: {
+                  color: "#8c8c8c",
+                },
+              },
+            ],
+          },
+        };
+
         const map = new Map({
           basemap: "topo-vector",
           ground: "world-elevation",
@@ -1267,6 +1344,12 @@
             backBalcony1,
             backBalcony2,
             backBalcony3,
+            //upper stair
+            upperStairLayer,
+            upperStairLayer2,
+            upperStairLayer3,
+
+            bottomInsideLayer,
           ], //end layers
         });
 

@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "generator": "smartcity",
+  "copyright": "Smartcity",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "upperStair",
+        "height": 0.11,
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [106.70298929364318, 10.776444363267906, 12.35],
+            [106.702967, 10.776421, 12.35],
+            [106.703017, 10.776377, 12.35],
+            [106.70303717107001, 10.776402204756911, 12.35],
+            [106.70298929364318, 10.776444363267906, 12.35]
+          ]
+        ]
+      },
+      "id": "2"
+    }
+  ]
+}
