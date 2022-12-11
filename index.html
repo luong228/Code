@@ -1279,6 +1279,25 @@
           },
         };
 
+        const btWindowEdge = new GeoJSONLayer({
+          url: "./dataGeojson/btWindowEdge/btWindowEdge.geojson",
+        });
+        btWindowEdge.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 1.21,
+                material: {
+                  color: "#ff0000",
+                },
+              },
+            ],
+          },
+        };
+
         const map = new Map({
           basemap: "topo-vector",
           ground: "world-elevation",
@@ -1350,6 +1369,8 @@
             upperStairLayer3,
 
             bottomInsideLayer,
+
+            btWindowEdge,
           ], //end layers
         });
 
