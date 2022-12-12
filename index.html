@@ -135,6 +135,8 @@
         const bottomLayer = new GeoJSONLayer({
           url: "./dataGeojson/bottom.geojson",
         });
+
+        console.log("hiep",bottomLayer)
         bottomLayer.renderer = {
           type: "simple",
           symbol: {
@@ -284,6 +286,26 @@
                 size: 2.5,
                 material: {
                   color: "#ded6cc",
+                },
+              },
+            ],
+          },
+        };
+
+        const bodyAroundLayer = new GeoJSONLayer({
+          url: "./dataGeojson/body/bodyAround.geojson",
+        });
+        bodyAroundLayer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                //size: 11.64,
+                size: 0.08,
+                material: {
+                  color: "#CFCFCF",
                 },
               },
             ],
@@ -1235,7 +1257,25 @@
                 size: 0.11,
                 material: {
                   color: "#8c8c8c",
-                },
+              },
+              },
+            ],
+          },
+        };
+        const leftRightBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/leftRightBalcony.geojson",
+        });
+        leftRightBalcony.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#E8E8E8",
+              },
               },
             ],
           },
@@ -1254,7 +1294,25 @@
                 size: 0.11,
                 material: {
                   color: "#8c8c8c",
-                },
+              },
+              },
+            ],
+          },
+        };
+        const upperLeftRightBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/upperLeftRightBalcony.geojson",
+        });
+        upperLeftRightBalcony.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.72,
+                material: {
+                  color: "#E8E8E8",
+              },
               },
             ],
           },
@@ -1298,6 +1356,7 @@
           },
         };
 
+        
         const map = new Map({
           basemap: "topo-vector",
           ground: "world-elevation",
@@ -1309,6 +1368,7 @@
             bodyTopLayer,
             bodylv1Layer,
             bodylv1_2Layer,
+            bodyAroundLayer,
             bodylvfinalLayer,
 
             stairLayer,
@@ -1338,7 +1398,7 @@
             secondLeftTopRoof,
             secondRightTopRoof,
 
-            //bottomPrism,
+            // bottomPrism,
             circle1,
             bottomPrismRight,
             prism,
@@ -1371,6 +1431,8 @@
             bottomInsideLayer,
 
             btWindowEdge,
+            leftRightBalcony,
+            upperLeftRightBalcony,
           ], //end layers
         });
 
