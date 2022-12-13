@@ -121,6 +121,48 @@
           map.add(graphicsLayer);
         });
 
+        esriRequest("./datajson/window.json", json_options).then(function (
+          response
+        ) {
+          var graphicsLayer = new GraphicsLayer();
+          console.log(response);
+          response.data.forEach(function (data) {
+            graphicsLayer.add(createGraphic(data));
+          });
+          map.add(graphicsLayer);
+        });
+
+        esriRequest("./datajson/window2.json", json_options).then(function (
+          response
+        ) {
+          var graphicsLayer = new GraphicsLayer();
+          console.log(response);
+          response.data.forEach(function (data) {
+            graphicsLayer.add(createGraphic(data));
+          });
+          map.add(graphicsLayer);
+        });
+        esriRequest("./datajson/windowCover.json", json_options).then(function (
+          response
+        ) {
+          var graphicsLayer = new GraphicsLayer();
+          console.log(response);
+          response.data.forEach(function (data) {
+            graphicsLayer.add(createGraphic(data));
+          });
+          map.add(graphicsLayer);
+        });
+
+        esriRequest("./datajson/windowBack.json", json_options).then(function (
+          response
+        ) {
+          var graphicsLayer = new GraphicsLayer();
+          console.log(response);
+          response.data.forEach(function (data) {
+            graphicsLayer.add(createGraphic(data));
+          });
+          map.add(graphicsLayer);
+        });
         // esriRequest("./datajson/domeCover.json", json_options).then(function (
         //   response
         // ) {
@@ -1410,6 +1452,25 @@
           },
         };
 
+        const window = new GeoJSONLayer({
+          url: "./dataGeojson/window/window.geojson",
+        });
+        window.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.6,
+                material: {
+                  color: "#ff0000",
+                },
+              },
+            ],
+          },
+        };
+
         
         const map = new Map({
           basemap: "topo-vector",
@@ -1491,6 +1552,7 @@
             lowerLeftRightBalcony,
             pillarLeftRightBalcony,
             tileLeftRightBalcony,
+            //window,
           ], //end layers
         });
 
