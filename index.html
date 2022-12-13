@@ -1280,6 +1280,60 @@
             ],
           },
         };
+        const lowerLeftRightBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/lowerLeftRightBalcony.geojson",
+        });
+        lowerLeftRightBalcony.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#ddd6cc",
+              },
+              },
+            ],
+          },
+        };
+        const pillarLeftRightBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/pillarLeftRightBalcony.geojson",
+        });
+        pillarLeftRightBalcony.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 1.88,
+                material: {
+                  color: "#5d5b57",
+              },
+              },
+            ],
+          },
+        };
+        const tileLeftRightBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/tileLeftRightBalcony.geojson",
+        });
+        tileLeftRightBalcony.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.12,
+                material: {
+                  color: "#cfcfcf",
+              },
+              },
+            ],
+          },
+        };
 
         const upperStairLayer2 = new GeoJSONLayer({
           url: "./dataGeojson/upperStair/upperStair2.geojson",
@@ -1420,9 +1474,6 @@
             domelower,
             dome2,
             dome2lower,
-            backBalcony1,
-            backBalcony2,
-            backBalcony3,
             //upper stair
             upperStairLayer,
             upperStairLayer2,
@@ -1431,8 +1482,15 @@
             bottomInsideLayer,
 
             btWindowEdge,
+            //Balcony
+            backBalcony1,
+            backBalcony2,
+            backBalcony3,
             leftRightBalcony,
             upperLeftRightBalcony,
+            lowerLeftRightBalcony,
+            pillarLeftRightBalcony,
+            tileLeftRightBalcony,
           ], //end layers
         });
 

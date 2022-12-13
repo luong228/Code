@@ -1,0 +1,31 @@
+{
+    "type": "FeatureCollection",
+    "generator": "smartcity",
+    "copyright": "Smartcity",
+    "timestamp": "2021-05-27T09:28:58Z",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "Building name": "lower left right Balcony",
+          "height": 0.25,
+          "idb": "1"
+        },
+        "geometry": {
+          "type": "MultiPolygon",
+          "coordinates": [
+            [
+                [
+                  [106.703005, 10.776608, 17.98],
+                  [106.70300713619886,10.776605901475852,17.98],
+                  [106.70298506929176,10.776580066963117,17.98],
+                          [106.70298293309312,10.776582165487264,17.98]
+                ]
+            ]
+          ]
+        },
+        "id": "2"
+      }
+    ]
+  }
+  
