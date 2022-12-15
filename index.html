@@ -121,6 +121,48 @@
           map.add(graphicsLayer);
         });
 
+        esriRequest("./datajson/window.json", json_options).then(function (
+          response
+        ) {
+          var graphicsLayer = new GraphicsLayer();
+          console.log(response);
+          response.data.forEach(function (data) {
+            graphicsLayer.add(createGraphic(data));
+          });
+          map.add(graphicsLayer);
+        });
+
+        esriRequest("./datajson/window2.json", json_options).then(function (
+          response
+        ) {
+          var graphicsLayer = new GraphicsLayer();
+          console.log(response);
+          response.data.forEach(function (data) {
+            graphicsLayer.add(createGraphic(data));
+          });
+          map.add(graphicsLayer);
+        });
+        esriRequest("./datajson/windowCover.json", json_options).then(function (
+          response
+        ) {
+          var graphicsLayer = new GraphicsLayer();
+          console.log(response);
+          response.data.forEach(function (data) {
+            graphicsLayer.add(createGraphic(data));
+          });
+          map.add(graphicsLayer);
+        });
+
+        esriRequest("./datajson/windowBack.json", json_options).then(function (
+          response
+        ) {
+          var graphicsLayer = new GraphicsLayer();
+          console.log(response);
+          response.data.forEach(function (data) {
+            graphicsLayer.add(createGraphic(data));
+          });
+          map.add(graphicsLayer);
+        });
         // esriRequest("./datajson/domeCover.json", json_options).then(function (
         //   response
         // ) {
@@ -135,6 +177,8 @@
         const bottomLayer = new GeoJSONLayer({
           url: "./dataGeojson/bottom.geojson",
         });
+
+        console.log("hiep", bottomLayer);
         bottomLayer.renderer = {
           type: "simple",
           symbol: {
@@ -284,6 +328,26 @@
                 size: 2.5,
                 material: {
                   color: "#ded6cc",
+                },
+              },
+            ],
+          },
+        };
+
+        const bodyAroundLayer = new GeoJSONLayer({
+          url: "./dataGeojson/body/bodyAround.geojson",
+        });
+        bodyAroundLayer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                //size: 11.64,
+                size: 0.08,
+                material: {
+                  color: "#CFCFCF",
                 },
               },
             ],
@@ -1165,6 +1229,24 @@
           },
         };
 
+        const frontBalcony2 = new GeoJSONLayer({
+          url: "./dataGeojson/frontBalcony2/frontBalcony2.geojson",
+        });
+        frontBalcony2.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.16,
+                material: {
+                  color: "#E8E8E8",
+                },
+              },
+            ],
+          },
+        };
         const backBalcony1 = new GeoJSONLayer({
           url: "./dataGeojson/backBalcony/backBalcony1.geojson",
         });
@@ -1240,6 +1322,96 @@
             ],
           },
         };
+        const rightBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/rightBalcony.geojson",
+        });
+        rightBalcony.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#E8E8E8",
+                },
+              },
+            ],
+          },
+        };
+        const leftBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/leftBalcony.geojson",
+        });
+        leftBalcony.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#E8E8E8",
+                },
+              },
+            ],
+          },
+        };
+        const lowerLeftBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/lowerLeftBalcony.geojson",
+        });
+        lowerLeftBalcony.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#ddd6cc",
+                },
+              },
+            ],
+          },
+        };
+        const pillarLeftBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/pillarLeftBalcony.geojson",
+        });
+        pillarLeftBalcony.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 1.88,
+                material: {
+                  color: "#5d5b57",
+                },
+              },
+            ],
+          },
+        };
+        const tileLeftBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/tileLeftBalcony.geojson",
+        });
+        tileLeftBalcony.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.12,
+                material: {
+                  color: "#cfcfcf",
+                },
+              },
+            ],
+          },
+        };
 
         const upperStairLayer2 = new GeoJSONLayer({
           url: "./dataGeojson/upperStair/upperStair2.geojson",
@@ -1254,6 +1426,42 @@
                 size: 0.11,
                 material: {
                   color: "#8c8c8c",
+                },
+              },
+            ],
+          },
+        };
+        const upperRightBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/upperRightBalcony.geojson",
+        });
+        upperRightBalcony.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.72,
+                material: {
+                  color: "#E8E8E8",
+                },
+              },
+            ],
+          },
+        };
+        const upperLeftBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/upperLeftBalcony.geojson",
+        });
+        upperLeftBalcony.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.72,
+                material: {
+                  color: "#E8E8E8",
                 },
               },
             ],
@@ -1317,6 +1525,25 @@
           },
         };
 
+        const window = new GeoJSONLayer({
+          url: "./dataGeojson/window/window.geojson",
+        });
+        window.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.6,
+                material: {
+                  color: "#ff0000",
+                },
+              },
+            ],
+          },
+        };
+
         const map = new Map({
           basemap: "topo-vector",
           ground: "world-elevation",
@@ -1328,6 +1555,7 @@
             bodyTopLayer,
             bodylv1Layer,
             bodylv1_2Layer,
+            bodyAroundLayer,
             bodylvfinalLayer,
 
             stairLayer,
@@ -1357,7 +1585,7 @@
             secondLeftTopRoof,
             secondRightTopRoof,
 
-            //bottomPrism,
+            // bottomPrism,
             circle1,
             bottomPrismRight,
             prism,
@@ -1379,9 +1607,6 @@
             domelower,
             dome2,
             dome2lower,
-            backBalcony1,
-            backBalcony2,
-            backBalcony3,
             //upper stair
             upperStairLayer,
             upperStairLayer2,
@@ -1390,7 +1615,19 @@
             bottomInsideLayer,
 
             btWindowEdge,
-            btWindowArc,
+            //Balcony
+            backBalcony1,
+            backBalcony2,
+            backBalcony3,
+            frontBalcony2,
+            leftBalcony,
+            upperLeftBalcony,
+            lowerLeftBalcony,
+            pillarLeftBalcony,
+            tileLeftBalcony,
+            rightBalcony,
+            upperRightBalcony,
+            //window,
           ], //end layers
         });
 
@@ -1398,9 +1635,9 @@
           container: "viewDiv",
           map: map,
           camera: {
-            position: [106.7029857616131, 10.776644872423557, 300],
-            heading: 10,
-            tilt: 0,
+            position: [106.70117749271675, 10.776408362678433, 60],
+            heading: 90,
+            tilt: 80,
           },
         });
 
