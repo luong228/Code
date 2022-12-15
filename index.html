@@ -1229,6 +1229,24 @@
           },
         };
 
+        const frontBalcony2 = new GeoJSONLayer({
+          url: "./dataGeojson/frontBalcony2/frontBalcony2.geojson",
+        });
+        frontBalcony2.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.16,
+                material: {
+                  color: "#E8E8E8",
+                },
+              },
+            ],
+          },
+        };
         const backBalcony1 = new GeoJSONLayer({
           url: "./dataGeojson/backBalcony/backBalcony1.geojson",
         });
@@ -1304,10 +1322,10 @@
             ],
           },
         };
-        const leftRightBalcony = new GeoJSONLayer({
-          url: "./dataGeojson/leftRightBalcony/leftRightBalcony.geojson",
+        const rightBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/rightBalcony.geojson",
         });
-        leftRightBalcony.renderer = {
+        rightBalcony.renderer = {
           type: "simple",
           symbol: {
             type: "polygon-3d",
@@ -1322,10 +1340,28 @@
             ],
           },
         };
-        const lowerLeftRightBalcony = new GeoJSONLayer({
-          url: "./dataGeojson/leftRightBalcony/lowerLeftRightBalcony.geojson",
+        const leftBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/leftBalcony.geojson",
         });
-        lowerLeftRightBalcony.renderer = {
+        leftBalcony.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.25,
+                material: {
+                  color: "#E8E8E8",
+              },
+              },
+            ],
+          },
+        };
+        const lowerLeftBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/lowerLeftBalcony.geojson",
+        });
+        lowerLeftBalcony.renderer = {
           type: "simple",
           symbol: {
             type: "polygon-3d",
@@ -1340,10 +1376,10 @@
             ],
           },
         };
-        const pillarLeftRightBalcony = new GeoJSONLayer({
-          url: "./dataGeojson/leftRightBalcony/pillarLeftRightBalcony.geojson",
+        const pillarLeftBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/pillarLeftBalcony.geojson",
         });
-        pillarLeftRightBalcony.renderer = {
+        pillarLeftBalcony.renderer = {
           type: "simple",
           symbol: {
             type: "polygon-3d",
@@ -1358,10 +1394,10 @@
             ],
           },
         };
-        const tileLeftRightBalcony = new GeoJSONLayer({
-          url: "./dataGeojson/leftRightBalcony/tileLeftRightBalcony.geojson",
+        const tileLeftBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/tileLeftBalcony.geojson",
         });
-        tileLeftRightBalcony.renderer = {
+        tileLeftBalcony.renderer = {
           type: "simple",
           symbol: {
             type: "polygon-3d",
@@ -1395,10 +1431,28 @@
             ],
           },
         };
-        const upperLeftRightBalcony = new GeoJSONLayer({
-          url: "./dataGeojson/leftRightBalcony/upperLeftRightBalcony.geojson",
+        const upperRightBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/upperRightBalcony.geojson",
         });
-        upperLeftRightBalcony.renderer = {
+        upperRightBalcony.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.72,
+                material: {
+                  color: "#E8E8E8",
+              },
+              },
+            ],
+          },
+        };
+        const upperLeftBalcony = new GeoJSONLayer({
+          url: "./dataGeojson/leftRightBalcony/upperLeftBalcony.geojson",
+        });
+        upperLeftBalcony.renderer = {
           type: "simple",
           symbol: {
             type: "polygon-3d",
@@ -1547,11 +1601,14 @@
             backBalcony1,
             backBalcony2,
             backBalcony3,
-            leftRightBalcony,
-            upperLeftRightBalcony,
-            lowerLeftRightBalcony,
-            pillarLeftRightBalcony,
-            tileLeftRightBalcony,
+            frontBalcony2,
+            leftBalcony,
+            upperLeftBalcony,
+            lowerLeftBalcony,
+            pillarLeftBalcony,
+            tileLeftBalcony,
+            rightBalcony,
+            upperRightBalcony,
             //window,
           ], //end layers
         });
