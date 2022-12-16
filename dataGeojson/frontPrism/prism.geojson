@@ -1,5 +1,4 @@
 {
-    
   "type": "FeatureCollection",
   "generator": "Municipal Theatre",
   "copyright": "Municipal Theatre",
@@ -9,7 +8,8 @@
       "type": "Feature",
       "properties": {
         "Building name": "prism",
-        "height": 8.2,
+        "height": 7.71,
+        "color": "#b4ae9c",
         "idb": "1"
       },
       "geometry": {

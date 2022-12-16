@@ -9,6 +9,7 @@
       "properties": {
         "Building name": "dome",
         "height": 0.6,
+        "color": "#cfcfcf",
         "idb": "1"
       },
       "geometry": {

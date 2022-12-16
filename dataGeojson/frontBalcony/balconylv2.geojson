@@ -7,8 +7,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "bacolony lv2",
+        "Building name": "balcony lv2",
         "height": 0.07,
+        "color": "#cfcfcf",
         "idb": "1"
       },
       "geometry": {
