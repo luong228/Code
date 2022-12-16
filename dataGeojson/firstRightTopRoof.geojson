@@ -1,49 +1,29 @@
 {
-    "type": "FeatureCollection",
-    "generator": "smartcity",
-    "copyright": "Smartcity",
-    "timestamp": "2021-05-27T09:28:58Z",
-    "features": [
-        {
-            "type": "Feature",
-            "properties": {
-                "Building name": "First right top roof",
-                "height": 0.78,
-                "idb": "1"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            106.703092,
-                            10.776620,
-                            30.28
-                        ],
-                        [
-                            106.703148,
-                            10.776572,
-                            33.42
-                        ],
-                        [
-                            106.703223,
-                            10.776655,
-                            33.42
-                        ],
-                        [
-                            106.703167,
-                            10.776704,
-                            30.28
-                        ],
-                        [
-                            106.703092,
-                            10.776620,
-                            30.28
-                        ]
-                    ]
-                ]
-            },
-            "id": "2"
-        }
-    ]
+  "type": "FeatureCollection",
+  "generator": "Municipal Theatre",
+  "copyright": "Municipal Theatre",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "First right top roof",
+        "height": 0.78,
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [106.703092, 10.77662, 30.28],
+            [106.703148, 10.776572, 33.42],
+            [106.703223, 10.776655, 33.42],
+            [106.703167, 10.776704, 30.28],
+            [106.703092, 10.77662, 30.28]
+          ]
+        ]
+      },
+      "id": "2"
+    }
+  ]
 }

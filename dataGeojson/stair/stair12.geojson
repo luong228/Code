@@ -1,49 +1,29 @@
 {
-    "type": "FeatureCollection",
-    "generator": "smartcity",
-    "copyright": "Smartcity",
-    "timestamp": "2021-05-27T09:28:58Z",
-    "features": [
-        {
-            "type": "Feature",
-            "properties": {
-                "Building name": "stair 12",
-                "height": 0.11,
-                "idb": "1"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            106.70293569975226,
-                            10.776450637639053,
-                            11.59
-                        ],
-                        [
-                            106.702916,
-                            10.776429,
-                            11.59
-                        ],
-                        [
-                            106.70303,
-                            10.776327,
-                            11.59
-                        ],
-                        [
-                            106.70304977745441,
-                            10.776350181828391,
-                            11.59
-                        ],
-                        [
-                            106.70293569975226,
-                            10.776450637639053,
-                            11.59
-                        ]
-                    ]
-                ]
-            },
-            "id": "2"
-        }
-    ]
+  "type": "FeatureCollection",
+  "generator": "Municipal Theatre",
+  "copyright": "Municipal Theatre",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "stair 12",
+        "height": 0.11,
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [106.70293569975226, 10.776450637639053, 11.59],
+            [106.702916, 10.776429, 11.59],
+            [106.70303, 10.776327, 11.59],
+            [106.70304977745441, 10.776350181828391, 11.59],
+            [106.70293569975226, 10.776450637639053, 11.59]
+          ]
+        ]
+      },
+      "id": "2"
+    }
+  ]
 }

@@ -1,34 +1,29 @@
 {
-    "type": "FeatureCollection",
-    "generator": "smartcity",
-    "copyright": "Smartcity",
-    "timestamp": "2021-05-27T09:28:58Z",
-    "features": [
-      {
-        "type": "Feature",
-        "properties": {
-          "Building name": "back bacolony 2",
-          "height": 0.05,
-          "idb": "1"
-        },
-        "geometry": {
-          "type": "Polygon",
-          "coordinates": [
-            [
-              
-  
-              [106.70358982347587, 10.776946164253921 ,17.85],
-              [106.70357691534466, 10.776931342931316 ,17.85],
-              [106.7034619994522, 10.777033857064415 ,17.85],
-              [106.70347507522112, 10.777047607953518 ,17.85],
-              [106.70358982347587, 10.776946164253921 ,17.85]
-
-  
-
-            ]
+  "type": "FeatureCollection",
+  "generator": "Municipal Theatre",
+  "copyright": "Municipal Theatre",
+  "timestamp": "2021-05-27T09:28:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Building name": "back bacolony 2",
+        "height": 0.05,
+        "idb": "1"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [106.70358982347587, 10.776946164253921, 17.85],
+            [106.70357691534466, 10.776931342931316, 17.85],
+            [106.7034619994522, 10.777033857064415, 17.85],
+            [106.70347507522112, 10.777047607953518, 17.85],
+            [106.70358982347587, 10.776946164253921, 17.85]
           ]
-        },
-        "id": "2"
-      }
-    ]
-  }
+        ]
+      },
+      "id": "2"
+    }
+  ]
+}

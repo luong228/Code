@@ -6,7 +6,7 @@
       name="viewport"
       content="initial-scale=1,maximum-scale=1,user-scalable=no"
     />
-    <title>Smartcity - Building Map</title>
+    <title>Municipal Theatre - Building Map</title>
 
     <style>
       html,
@@ -208,6 +208,26 @@
                 size: 1.95,
                 material: {
                   color: "#4a4a4a",
+                },
+              },
+            ],
+          },
+        };
+
+        const bottomUpper = new GeoJSONLayer({
+          url: "./dataGeojson/bottomUpper.geojson",
+        });
+
+        bottomUpper.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                size: 0.74,
+                material: {
+                  color: "#DAA520",
                 },
               },
             ],
@@ -1613,6 +1633,7 @@
             upperStairLayer3,
 
             bottomInsideLayer,
+            bottomUpper,
 
             btWindowEdge,
             //Balcony
