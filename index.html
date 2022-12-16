@@ -141,7 +141,39 @@
           });
           map.add(graphicsLayer);
         });
+        esriRequest("./datajson/Frontwindow/window.json", json_options).then(
+          function (response) {
+            var graphicsLayer = new GraphicsLayer();
+            console.log(response);
+            response.data.forEach(function (data) {
+              graphicsLayer.add(createGraphic(data));
+            });
+            map.add(graphicsLayer);
+          }
+        );
 
+        esriRequest("./datajson/Frontwindow/window2.json", json_options).then(
+          function (response) {
+            var graphicsLayer = new GraphicsLayer();
+            console.log(response);
+            response.data.forEach(function (data) {
+              graphicsLayer.add(createGraphic(data));
+            });
+            map.add(graphicsLayer);
+          }
+        );
+
+        esriRequest(
+          "./datajson/Frontwindow/windowCover.json",
+          json_options
+        ).then(function (response) {
+          var graphicsLayer = new GraphicsLayer();
+          console.log(response);
+          response.data.forEach(function (data) {
+            graphicsLayer.add(createGraphic(data));
+          });
+          map.add(graphicsLayer);
+        });
         esriRequest("./datajson/window2.json", json_options).then(function (
           response
         ) {
