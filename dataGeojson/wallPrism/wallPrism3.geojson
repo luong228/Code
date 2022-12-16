@@ -7,8 +7,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "Wall prism 3",
+        "BuildingName": "Wall prism 3",
         "height": 0.75,
+        "color": "#b4ae9c",
         "idb": "1"
       },
       "geometry": {

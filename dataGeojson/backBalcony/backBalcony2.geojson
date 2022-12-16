@@ -7,7 +7,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "back bacolony 2",
+        "BuildingName": "back balcony 2",
         "height": 0.25,
         "color": "#E8E8E8",
         "idb": "1"

@@ -7,8 +7,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "roof border lower",
+        "BuildingName": "roof border lower",
         "height": 0.33,
+        "color": "#cfcfcf",
         "idb": "1"
       },
       "geometry": {

@@ -7,8 +7,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "stair 14",
+        "BuildingName": "stair 14",
         "height": 0.11,
+        "color": "#8c8c8c",
         "idb": "1"
       },
       "geometry": {

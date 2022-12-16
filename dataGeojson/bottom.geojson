@@ -7,10 +7,10 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "bottom",
+        "BuildingName": "bottom",
         "height": 1.95,
         "idb": "1",
-        "color": "#a58e77"
+        "color": "#DAA520"
       },
       "geometry": {
         "type": "Polygon",

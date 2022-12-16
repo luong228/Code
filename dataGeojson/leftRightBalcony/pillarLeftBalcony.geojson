@@ -7,7 +7,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "pillar left  Balcony",
+        "BuildingName": "pillar left  Balcony",
         "height": 1.88,
         "color": "#5d5b57",
         "idb": "1"
