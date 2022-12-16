@@ -7,7 +7,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "bottomInside",
+        "BuildingName": "bottomInside",
         "height": 1.95,
         "color": "#4a4a4a",
         "idb": "1"

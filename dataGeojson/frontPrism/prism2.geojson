@@ -7,7 +7,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "prism 2",
+        "BuildingName": "prism 2",
         "height": 0.61,
         "color": "#cfcfcf",
         "idb": "1"

@@ -7,7 +7,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "second right top roof",
+        "BuildingName": "second right top roof",
         "height": 0.78,
         "color": "#73716C",
         "idb": "1"

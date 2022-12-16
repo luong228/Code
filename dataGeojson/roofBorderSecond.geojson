@@ -7,7 +7,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "second roof border",
+        "BuildingName": "second roof border",
         "height": 0.72,
         "color": "#b4ae9c",
         "idb": "1"

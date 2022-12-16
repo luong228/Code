@@ -7,7 +7,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "body around",
+        "BuildingName": "body around 2",
         "height": 0.25,
         "color": "#CFCFCF",
         "idb": "1"

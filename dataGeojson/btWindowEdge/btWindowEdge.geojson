@@ -7,7 +7,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "Bottom Window Edge",
+        "BuildingName": "Bottom Window Edge",
         "height": 1.21,
         "color": "#fff",
         "idb": "1"

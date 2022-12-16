@@ -7,7 +7,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "window",
+        "BuildingName": "window",
         "height": 0.6,
         "color": "#ff0000",
         "idb": "1"

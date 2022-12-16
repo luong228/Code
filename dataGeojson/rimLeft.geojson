@@ -7,7 +7,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "left rim",
+        "BuildingName": "left rim",
         "height": 0.99,
         "color": "#ded6cc",
         "idb": "1"

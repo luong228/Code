@@ -7,7 +7,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "bottom",
+        "BuildingName": "bottom",
         "height": 1.95,
         "idb": "1",
         "color": "#DAA520"
