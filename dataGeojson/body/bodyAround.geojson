@@ -1,7 +1,7 @@
 {
     "type": "FeatureCollection",
-    "generator": "smartcity",
-    "copyright": "Smartcity",
+    "generator": "Municipal Theatre",
+    "copyright": "Municipal Theatre",
     "timestamp": "2021-05-27T09:28:58Z",
     "features": [
       {
@@ -200,9 +200,9 @@
 [106.70315325220466,10.776342840897467,15.1]
             ]
           ]
-        },
-        "id": "2"
-      }
-    ]
-  }
-  
+        
+      },
+      "id": "2"
+    }
+  ]
+}
