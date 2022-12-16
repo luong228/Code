@@ -9,6 +9,7 @@
       "properties": {
         "Building name": "Bottom Window Edge",
         "height": 1.21,
+        "color": "#fff",
         "idb": "1"
       },
       "geometry": {

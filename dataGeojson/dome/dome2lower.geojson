@@ -8,7 +8,8 @@
       "type": "Feature",
       "properties": {
         "Building name": "dome 2 lower",
-        "height": 1.54,
+        "height": 1.51,
+        "color": "#cfcfcf",
         "idb": "2"
       },
       "geometry": {

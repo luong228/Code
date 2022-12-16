@@ -9,6 +9,7 @@
       "properties": {
         "Building name": "circle 1",
         "height": 0.31,
+        "color": "#dbdbdb",
         "idb": "1"
       },
       "geometry": {

@@ -8,7 +8,8 @@
       "type": "Feature",
       "properties": {
         "Building name": "upper right Balcony",
-        "height": 0.33,
+        "height": 0.72,
+        "color": "#E8E8E8",
         "idb": "1"
       },
       "geometry": {

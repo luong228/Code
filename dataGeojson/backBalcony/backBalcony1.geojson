@@ -8,7 +8,8 @@
       "type": "Feature",
       "properties": {
         "Building name": "back bacolony 1",
-        "height": 0.05,
+        "height": 0.25,
+        "color": "#E8E8E8",
         "idb": "1"
       },
       "geometry": {

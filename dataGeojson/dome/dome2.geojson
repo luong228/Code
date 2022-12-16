@@ -7,8 +7,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Building name": "dome",
+        "Building name": "dome2",
         "height": 1.45,
+        "color": "#cfcfcf",
         "idb": "1"
       },
       "geometry": {

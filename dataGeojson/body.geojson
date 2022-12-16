@@ -9,7 +9,8 @@
       "properties": {
         "Building name": "body",
         "height": 1.94,
-        "idb": "1"
+        "idb": "1",
+        "color": "#ded6cc"
       },
       "geometry": {
         "type": "Polygon",
