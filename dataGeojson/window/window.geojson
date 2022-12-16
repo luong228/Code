@@ -9,6 +9,7 @@
       "properties": {
         "Building name": "window",
         "height": 0.6,
+        "color": "#ff0000",
         "idb": "1"
       },
       "geometry": {

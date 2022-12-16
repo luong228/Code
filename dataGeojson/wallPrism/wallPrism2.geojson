@@ -9,6 +9,7 @@
       "properties": {
         "Building name": "Wall prism 2",
         "height": 0.61,
+        "color": "#cfcfcf",
         "idb": "1"
       },
       "geometry": {

@@ -9,6 +9,7 @@
       "properties": {
         "Building name": "stair 13",
         "height": 0.11,
+        "color": "#8c8c8c",
         "idb": "1"
       },
       "geometry": {

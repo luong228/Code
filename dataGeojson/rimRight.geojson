@@ -9,6 +9,7 @@
       "properties": {
         "Building name": "right rim",
         "height": 0.97,
+        "color": "#ded6cc",
         "idb": "1"
       },
       "geometry": {

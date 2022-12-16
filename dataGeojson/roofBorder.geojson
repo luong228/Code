@@ -9,6 +9,7 @@
       "properties": {
         "Building name": "roof border",
         "height": 0.32,
+        "color": "#cfcfcf",
         "idb": "1"
       },
       "geometry": {
