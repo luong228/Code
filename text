@@ -1,0 +1,14 @@
+],
+"symbol": {
+    "type": "simple-fill",
+    "color": "#b4ae9c",
+    "outline": {
+        "color": "#b4ae9c",
+        "width": 1
+    }
+}
+},
+{
+"_comment": "window back right",
+"type": "polygon",
+"rings": [
