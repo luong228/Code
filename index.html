@@ -354,6 +354,66 @@
           },
         };
 
+        const bodyAround2Layer = new GeoJSONLayer({
+          url: "./dataGeojson/body/bodyAround2.geojson",
+        });
+        bodyAround2Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                //size: 11.64,
+                size: 0.25,
+                material: {
+                  color: "#CFCFCF",
+                },
+              },
+            ],
+          },
+        };
+
+        const bodyAround3Layer = new GeoJSONLayer({
+          url: "./dataGeojson/body/bodyAround3.geojson",
+        });
+        bodyAround3Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                //size: 11.64,
+                size: 0.6,
+                material: {
+                  color: "#ded6cc",
+                },
+              },
+            ],
+          },
+        };
+
+        const bodyAround4Layer = new GeoJSONLayer({
+          url: "./dataGeojson/body/bodyAround4.geojson",
+        });
+        bodyAround4Layer.renderer = {
+          type: "simple",
+          symbol: {
+            type: "polygon-3d",
+            symbolLayers: [
+              {
+                type: "extrude",
+                //size: 11.64,
+                size: 0.15,
+                material: {
+                  color: "#CFCFCF",
+                },
+              },
+            ],
+          },
+        };
+
         const bodylvfinalLayer = new GeoJSONLayer({
           url: "./dataGeojson/body/bodylvfinal.geojson",
         });
@@ -898,7 +958,7 @@
               {
                 type: "extrude",
                 // size: 7.15,
-                size: 7.52,
+                size: 8.2,
                 material: {
                   color: "#9e998a",
                 },
@@ -916,7 +976,7 @@
             symbolLayers: [
               {
                 type: "extrude",
-                size: 4.44,
+                size: 4.7,
                 material: {
                   color: "#9e998a",
                 },
@@ -1538,6 +1598,9 @@
             bodylv1Layer,
             bodylv1_2Layer,
             bodyAroundLayer,
+            bodyAround2Layer,
+            bodyAround3Layer,
+            bodyAround4Layer,
             bodylvfinalLayer,
 
             stairLayer,

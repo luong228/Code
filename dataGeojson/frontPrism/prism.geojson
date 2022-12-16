@@ -9,7 +9,7 @@
         "type": "Feature",
         "properties": {
           "Building name": "prism",
-          "height":7.15,
+          "height":8.2,
           "idb": "1"
         },
         "geometry": {
